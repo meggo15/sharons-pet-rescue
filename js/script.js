@@ -7,7 +7,7 @@ const createPet = function (name, species) {
   const pet = {
     name: name,
     species: species,
-    isTired: 5, // Scale from 1 (refreshed) to 10 (exhausted)
+    isTired: 5, 
     sleep: function () {
       console.log(
         `${this.name} needs nap. Zzz...`
@@ -46,7 +46,7 @@ const francine = createPet("Francine", "turtle");
 clover.isTired = 8;
 francine.isTired = 9;
 
-// Create array of our pet objects
+
 const allPets = [
   sora,
   clover,
@@ -57,9 +57,9 @@ const allPets = [
 
 // console.log(allPets);
 
-// Display pets in the browser
+
 const showPets = function (petArray) {
-  // empty list
+  
   pets.innerHTML = "";
 
   for (let pet of petArray) {
